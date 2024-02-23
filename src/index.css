@@ -28,6 +28,10 @@ p {
   display: inline-block;
 }
 
+input {
+  width: 400px;
+}
+
 ul {
   list-style-type: none;
   padding: 0;

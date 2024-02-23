@@ -46,7 +46,7 @@ export default function ContactForm({ onAdd }) {
           id={nameFieldId}
           className={css.input}
         ></Field>
-        <ErrorMessage type="text" name="name" as="p" />
+        <ErrorMessage type="text" name="name" component="p" className={css.error} />
         <label htmlFor={numberFieldId}>Number</label>
         <Field
           type="tel"
@@ -56,8 +56,10 @@ export default function ContactForm({ onAdd }) {
           placeholder="000-00-00"
           className={css.input}
         ></Field>
-        <ErrorMessage type="text" name="number" as="p" />
-        <button type="submit" className={css.button}>Add contact</button>
+        <ErrorMessage type="text" name="number" component="p" className={css.error} />
+        <button type="submit" className={css.button}>
+          Add contact
+        </button>
       </Form>
     </Formik>
   );

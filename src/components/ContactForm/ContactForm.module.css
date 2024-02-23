@@ -12,13 +12,20 @@
   border-radius: 4px;
 }
 
-input:focus {
-  border: #3b2b2d;
+.button {
+  background-color: #705257c0;
+  color: white;
+  border: 1px transparent solid;
+  border-radius: 4px;
+  width: 150px;
+  align-self: center;
 }
 
-.button {
-  background-color: #fed7de8a;
-  color: #3b2b2d;
-  border: 1px #3b2b2d solid;
-  border-radius: 4px;
+.button:hover,
+.button:focus {
+  background-color: #705257;
+}
+
+.error {
+  color: #ff4500;
 }
